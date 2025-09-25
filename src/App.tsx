@@ -92,7 +92,7 @@ function App() {
             {/* Logo */}
             <div className="flex items-center space-x-3">
               <img 
-                src="/WhatsApp Image 2025-08-16 at 1.13.46 AM.jpeg" 
+                src="/etifaaqLogo.jpeg" 
                 alt="Etifaaq Logo" 
                 className="w-10 h-10 object-contain rounded-lg bg-white/10 backdrop-blur-sm p-1"
               />
@@ -160,7 +160,7 @@ function App() {
             <div className="animate-fade-in-up">
               <div className="flex items-center space-x-4 mb-6">
                 <img 
-                  src="/WhatsApp Image 2025-08-16 at 1.13.46 AM.jpeg" 
+                  src="/etifaaqLogo.jpeg" 
                   alt="Etifaaq Logo" 
                   className="w-16 h-16 object-contain rounded-xl shadow-lg bg-gradient-to-br from-white/20 to-white/10 backdrop-blur-sm p-2 border border-white/20"
                 />
@@ -306,7 +306,7 @@ function App() {
                     </div>
                     <div>
                       <div className="font-semibold">Phone</div>
-                      <div className="opacity-90">+1 (555) 123-4567</div>
+                      <div className="opacity-90">+91 9037 710 659</div>
                     </div>
                   </div>
                   
@@ -316,7 +316,7 @@ function App() {
                     </div>
                     <div>
                       <div className="font-semibold">Email</div>
-                      <div className="opacity-90">info@travelpro.com</div>
+                      <div className="opacity-90">etifaaqglobaltravel@gmail.com</div>
                     </div>
                   </div>
                   
@@ -326,7 +326,7 @@ function App() {
                     </div>
                     <div>
                       <div className="font-semibold">Address</div>
-                      <div className="opacity-90">123 Travel Street, City, State 12345</div>
+                      <div className="opacity-90">Ground Fllor,IC Building,Railway Link Road,Calicut-673011</div>
                     </div>
                   </div>
                   
@@ -336,7 +336,7 @@ function App() {
                     </div>
                     <div>
                       <div className="font-semibold">Business Hours</div>
-                      <div className="opacity-90">Mon - Sat: 9:00 AM - 6:00 PM</div>
+                      <div className="opacity-90">Mon - Sat: 9:00 AM - 9:00 PM</div>
                     </div>
                   </div>
                 </div>
@@ -345,13 +345,15 @@ function App() {
                 <div className="mt-8 pt-8 border-t border-white/20">
                   <h4 className="font-semibold mb-4">Follow Us</h4>
                   <div className="flex space-x-4">
-                    {[Facebook, Twitter, Instagram, Linkedin].map((Icon, index) => (
-                      <button 
-                        key={index}
-                        className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors"
-                      >
-                        <Icon className="w-5 h-5" />
-                      </button>
+                    {[Instagram].map((Icon, index) => (
+                     <a
+                      href="https://www.instagram.com/etifaaq_gobaltravel?igsh=aTNtc3F5cDJtYmEw"   
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-10 h-10 bg-white/20 rounded-lg flex items-center justify-center hover:bg-white/30 transition-colors"
+                    >
+                      <Instagram className="w-5 h-5" />
+                    </a>
                     ))}
                   </div>
                 </div>
@@ -360,73 +362,90 @@ function App() {
 
             {/* Contact Form */}
             <div className="animate-fade-in-right">
-              <form className="space-y-6">
-                <div className="grid md:grid-cols-2 gap-6">
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
-                      placeholder="John"
-                    />
-                  </div>
-                  <div>
-                    <label className="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
-                    <input 
-                      type="text" 
-                      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
-                      placeholder="Doe"
-                    />
-                  </div>
-                </div>
+              <form 
+                action="https://formspree.io/f/mwprpnaq"  //  Formspree URL
+                method="POST"
+                className="space-y-6"
+              >
+                        <div className="grid md:grid-cols-2 gap-6">
+                          <div>
+                            <label className="block text-sm font-semibold text-gray-700 mb-2">First Name</label>
+                            <input 
+                              type="text" 
+                              name="firstName"   //  important for Formspree
+                              required
+                              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+                              placeholder="John"
+                            />
+    </div>
+    <div>
+      <label className="block text-sm font-semibold text-gray-700 mb-2">Last Name</label>
+      <input 
+        type="text" 
+        name="lastName"
+        required
+        className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+        placeholder="Doe"
+      />
+    </div>
+  </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
-                  <input 
-                    type="email" 
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
-                    placeholder="john@example.com"
-                  />
-                </div>
+  <div>
+    <label className="block text-sm font-semibold text-gray-700 mb-2">Email</label>
+    <input 
+      type="email" 
+      name="email"
+      required
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+      placeholder="john@example.com"
+    />
+  </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
-                  <input 
-                    type="tel" 
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
-                    placeholder="+1 (555) 123-4567"
-                  />
-                </div>
+  <div>
+    <label className="block text-sm font-semibold text-gray-700 mb-2">Phone</label>
+    <input 
+      type="tel" 
+      name="phone"
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+      placeholder="+1 (555) 123-4567"
+    />
+  </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Service Interest</label>
-                  <select className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors">
-                    <option>Select a service</option>
-                    <option>Air Ticket Booking</option>
-                    <option>Umrah Service</option>
-                    <option>Tour Packages</option>
-                    <option>Visa Processing</option>
-                    <option>Document Attestation</option>
-                    <option>Travel Assistance</option>
-                  </select>
-                </div>
+  <div>
+    <label className="block text-sm font-semibold text-gray-700 mb-2">Service Interest</label>
+    <select 
+      name="service"
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors"
+    >
+      <option>Select a service</option>
+      <option>Air Ticket Booking</option>
+      <option>Umrah Service</option>
+      <option>Tour Packages</option>
+      <option>Visa Processing</option>
+      <option>Document Attestation</option>
+      <option>Travel Assistance</option>
+    </select>
+  </div>
 
-                <div>
-                  <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
-                  <textarea 
-                    rows={5}
-                    className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none"
-                    placeholder="Tell us about your travel plans..."
-                  />
-                </div>
+  <div>
+    <label className="block text-sm font-semibold text-gray-700 mb-2">Message</label>
+    <textarea 
+      name="message"
+      rows={5}
+      required
+      className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-emerald-500 focus:border-emerald-500 transition-colors resize-none"
+      placeholder="Tell us about your travel plans..."
+    />
+  </div>
 
-                <button 
-                  type="submit"
-                  className="w-full bg-emerald-800 text-white py-4 rounded-lg font-semibold hover:bg-emerald-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
-                >
-                  Send Message
-                </button>
-              </form>
+  <button 
+    type="submit"
+    className="w-full bg-emerald-800 text-white py-4 rounded-lg font-semibold hover:bg-emerald-700 transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-xl"
+  >
+    Send Message
+  </button>
+</form>
+
             </div>
           </div>
         </div>
@@ -440,7 +459,7 @@ function App() {
             <div className="col-span-2 md:col-span-1">
               <div className="flex items-center space-x-3 mb-6">
                 <img 
-                  src="/WhatsApp Image 2025-08-16 at 1.13.46 AM.jpeg" 
+                  src="/etifaaqLogo.jpeg" 
                   alt="Etifaaq Logo" 
                   className="w-10 h-10 object-contain rounded-lg bg-white/20 backdrop-blur-sm p-1 border border-white/10"
                 />
