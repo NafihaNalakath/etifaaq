@@ -326,7 +326,7 @@ function App() {
                     </div>
                     <div>
                       <div className="font-semibold">Address</div>
-                      <div className="opacity-90">Ground Fllor,IC Building,Railway Link Road,Calicut-673011</div>
+                      <div className="opacity-90">Ground Floor,IC Building,Railway Link Road,Calicut-673011</div>
                     </div>
                   </div>
                   
@@ -493,8 +493,8 @@ function App() {
                 <li><button onClick={() => scrollToSection('home')} className="hover:text-yellow-400 transition-colors">Home</button></li>
                 <li><button onClick={() => scrollToSection('services')} className="hover:text-yellow-400 transition-colors">Services</button></li>
                 <li><button onClick={() => scrollToSection('contact')} className="hover:text-yellow-400 transition-colors">Contact</button></li>
-                <li className="hover:text-yellow-400 transition-colors cursor-pointer">About Us</li>
-                <li className="hover:text-yellow-400 transition-colors cursor-pointer">Privacy Policy</li>
+                {/* <li className="hover:text-yellow-400 transition-colors cursor-pointer">About Us</li>
+                <li className="hover:text-yellow-400 transition-colors cursor-pointer">Privacy Policy</li>*/}
               </ul>
             </div>
 
@@ -504,15 +504,15 @@ function App() {
               <div className="space-y-3 text-gray-400">
                 <div className="flex items-center space-x-3">
                   <Phone className="w-4 h-4" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 9037 710 659</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <Mail className="w-4 h-4" />
-                  <span>info@travelpro.com</span>
+                  <span>etifaaqglobaltravel@gmail.com</span>
                 </div>
                 <div className="flex items-center space-x-3">
                   <MapPin className="w-4 h-4" />
-                  <span>123 Travel Street, City</span>
+                  <span>Railway, Link Road Calicut-673011</span>
                 </div>
               </div>
             </div>
